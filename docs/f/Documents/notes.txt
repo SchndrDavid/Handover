@@ -1,0 +1,26 @@
+Notes on running this thing
+===========================
+
+Runs as a single container on any box that has Docker. The data directory is
+a bind mount, which means the folder stays useful without the app — copy files
+in over SFTP or a Samba share and they show up on the next refresh.
+
+Points that took a while to get right:
+
+  Path handling
+      Every path from a request goes through resolve() and has to stay inside
+      ROOT. Symlinks that point outside break as a side effect, which is the
+      behaviour I wanted.
+
+  Subpath hosting
+      The frontend reads its API prefix off window.location.pathname at load
+      time. Absolute /api/... paths break the moment the app is served under
+      something like /handover/, and reverse proxies make that common.
+
+  File ownership
+      The container runs as a normal uid, not root. Files it writes stay
+      editable from outside the container without a chown afterwards.
+
+  Uploads
+      Folder uploads arrive with the relative path in the filename field. The
+      backend recreates the structure instead of flattening it.

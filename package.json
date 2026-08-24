@@ -1,0 +1,12 @@
+{
+  "name": "handover-demo",
+  "private": true,
+  "description": "Dev-only tooling for the GitHub Pages demo. The app itself has no JS dependencies.",
+  "type": "module",
+  "scripts": {
+    "test": "node scripts/test-demo.mjs"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0"
+  }
+}

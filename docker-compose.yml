@@ -1,0 +1,16 @@
+name: handover
+
+services:
+  handover:
+    build: ./app
+    image: handover
+    container_name: handover
+    restart: unless-stopped
+    ports:
+      - "${HANDOVER_PORT:-8100}:8100"
+    environment:
+      HANDOVER_ROOT: /data
+      HANDOVER_READONLY: "${HANDOVER_READONLY:-false}"
+    volumes:
+      - "${DATA_DIR:-./data}:/data"
+    user: "${PUID:-1000}:${PGID:-1000}"

@@ -1,0 +1,22 @@
+# secrets and local config
+.env
+
+# runtime data — never commit anything that lands in the drop folder
+data/
+*.db
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# editors / os
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# node — only needed for the demo test
+node_modules/
+package-lock.json

@@ -1,0 +1,8 @@
+[2026-08-18 21:04:12] INFO   started, root=/data readonly=False
+[2026-08-18 21:04:12] INFO   disk 412.7 GB free of 916.9 GB
+[2026-08-18 21:07:33] INFO   upload  3 files -> Photos/
+[2026-08-18 21:07:34] INFO   upload  finished in 1.9s
+[2026-08-18 22:15:02] INFO   move    2 items -> Archive/
+[2026-08-18 22:41:00] INFO   mkdir   Archive/2026-08
+[2026-08-19 08:12:44] WARN   rejected path traversal: ../../etc/passwd
+[2026-08-19 08:12:44] INFO   403 returned to 100.64.0.7
