@@ -3,9 +3,6 @@
 A self-hosted file drop for moving things between your own devices. Upload from
 your phone, pick it up on your laptop, no cloud account in the middle.
 
-**[Live demo →](https://handover.schndrdavid.eu)** — the real frontend running
-against a fake backend inside your browser. Nothing is uploaded anywhere.
-
 ---
 
 ## Why
