@@ -6,8 +6,6 @@ your phone, pick it up on your laptop, no cloud account in the middle.
 **[Live demo →](https://handover.schndrdavid.eu)** — the real frontend running
 against a fake backend inside your browser. Nothing is uploaded anywhere.
 
-![Handover](docs/screenshot.png)
-
 ---
 
 ## Why
