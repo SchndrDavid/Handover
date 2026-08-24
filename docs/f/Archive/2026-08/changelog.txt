@@ -1,3 +1,0 @@
-0.1  first working upload
-0.2  folder support
-0.3  search
